@@ -1,6 +1,6 @@
 {
   "name": "is-http-url",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Validate URLs for sane values",
   "main": "index.js",
   "dependencies": {
