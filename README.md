@@ -23,7 +23,8 @@ const assert = require('assert')
 const isHttpUrl = require('is-http-url')
 
 assert.ok(isHttpUrl('http://example.com/hello-world.txt'))
-assert.notOk(isDomainName('//test'))
+assert.notOk(isHttpUrl('//test'))
+
 ```
 
 ## API
