@@ -1,0 +1,38 @@
+{
+  "name": "is-http-url",
+  "version": "1.0.0",
+  "description": "Validate URLs for sane values",
+  "main": "index.js",
+  "dependencies": {
+    "is-domain-name": "^1.0.0",
+    "tape": "^4.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilbayes/is-http-url.git"
+  },
+  "keywords": [
+    "is",
+    "http",
+    "url",
+    "is-url",
+    "validate",
+    "valid",
+    "host",
+    "hostname",
+    "domain",
+    "same-origin",
+    "referer",
+    "referrer"
+  ],
+  "author": "Emil Bay <github@tixz.dk>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilbayes/is-http-url/issues"
+  },
+  "homepage": "https://github.com/emilbayes/is-http-url#readme"
+}
