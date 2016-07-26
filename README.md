@@ -14,7 +14,7 @@ Does the following:
 
 * Protocol should be one of `http:` or `https:`
 * Hostname should be valid [domain name](http://github.com/emilbayes/is-domain-name) or IPv4 address (TODO: IPv6)
-* Port, if given, should be an integer in the range [0, 65535]
+* Port, if given, should be an integer in the range [1, 65535]
 
 Example usage could be to validate the `Origin` or `Referer` HTTP headers
 

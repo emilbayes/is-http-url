@@ -14,7 +14,7 @@ module.exports = function isHttpUrl (u) {
   var hasValidDomainName = uP.hostname == null ? false : (isDomainName(uP.hostname) || ip4Regex.test(uP.hostname))
 
   // If no port is found, port should just be true
-  var hasValidPort = uP.port == null ? true : uP.port >= 0 && uP.port < 65536
+  var hasValidPort = uP.port == null ? true : uP.port > 0 && uP.port < 65536
 
   return hasValidProtocol && hasValidDomainName && hasValidPort
 }

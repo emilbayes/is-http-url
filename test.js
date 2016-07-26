@@ -5,7 +5,7 @@ test('valid urls', function (assert) {
   [
     'http://example.com',
     'http://hello.world:8080/hello.txt',
-    'https://130.198.123.256:0/hello.txt',
+    'https://130.198.123.256:1/hello.txt',
     'https://130.198.123.256:65535/hello.txt',
     'http://localhost'
   ].map(u => assert.ok(isHttpUrl(u), 'should be valid: ' + u))
@@ -27,6 +27,7 @@ test('invalid urls', function (assert) {
     'https:///hello.txt:8000',
     '//hello.dk:8000/hello.txt',
     '129.123:81231',
+    'https://130.198.123.256:0/hello.txt',
     'https://192.168.1.1:65536/hello.txt',
     'http//hello.world:8080/hello.txt',
     'http//hello.world:8080.5/hello.txt',
